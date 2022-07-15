@@ -1,9 +1,6 @@
 a=int(input())
+lst=['A','B','C','D','E','F','G','H','I','J','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 for i in range(a):
-  for j in range(a-(i+1)):
-    print(" ",end="");
-  for j in range(i,0,-1):
-    print(j,end="")
-  for j in range(i+1):
-    print(j,end="")
+  for j in range(a):
+    print(lst[i],"",end="")
   print("")

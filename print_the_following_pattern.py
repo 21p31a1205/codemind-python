@@ -1,13 +1,6 @@
 a=int(input())
-for i in range(a):
-  for j in range(a-i-1):
-    print(" ",end="")
-  for j in range(a):
-    if i==0 or i==a-1:
-       print("*",end="")
-    else:
-      if j==0 or j==a-1:
-         print("*",end="")
-      else:
-        print(" ",end="")
+lst=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+for i in range(a,0,-1):
+  for j in range(i):
+    print(lst[i-1],end=" ")
   print("")

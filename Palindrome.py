@@ -1,7 +1,11 @@
 n=int(input())
-q=str(n)
-q=q[::-1]
-if int(q)==n:
-    print(True)
+x=n
+rev=0
+while x>0:
+    rem=x%10
+    rev=rev*10+rem
+    x//=10
+if n==rev:
+    print("True")
 else:
-    print(False)
+    print("False")

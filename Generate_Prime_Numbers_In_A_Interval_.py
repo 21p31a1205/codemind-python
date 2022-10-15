@@ -1,10 +1,10 @@
-a=int(input())
-b=int(input())
-for j in range(a,b) :
-    c=0
-    if(j!=1):
-         for i in range(2,j) :
-             if(j%i==0):
-                 c=1
-         if(c==0) :
-             print(j)
+m=int(input())
+n=int(input())
+for i in range(m,n+1):
+    flag=0
+    for j in range(2,i):
+        if i%j==0:
+            flag=1
+            break
+    if flag==0 and i!=1:
+        print(i)
